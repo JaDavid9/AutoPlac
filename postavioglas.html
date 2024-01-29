@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novi oglasi</title>
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <style>
+       body {
+       font-family: Arial, sans-serif;
+       background-color: #f0f0f0;
+       margin: 0;
+       padding: 20px;
+            }
+
+     h2 {
+     margin-bottom: 20px;
+     text-align: center;
+     font-family: "Arial Black", sans-serif;
+        }
+
+     form {
+     max-width: 500px;
+     margin: 0 auto;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 4px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+
+      input[type="text"],
+      input[type="number"],
+      textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+      textarea {
+      height: 100px;
+    }
+
+      input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+    .error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  </style>
+</head>
+<body>
+    <h2>Dodaj nove oglase</h2>
+    <form action="postavioglas.php" method="POST">
+        <label for="nazivVozila">Naziv Vozila:</label>
+        <input type="text" name="nazivVozila" required><br>
+
+        <label for="marka">Marka:</label>
+        <input type="number" name="marka" required><br>
+
+        <label for="opisVozila">Opis Vozila:</label>
+        <textarea name="opisVozila" required></textarea><br>
+
+        <label for="cena">Cena:</label>
+        <input type="number" name="cena" required><br>
+
+        <label for="gorivo">Gorivo:</label>
+        <input type="text" name="gorivo" required><br>
+
+        <label for="godiste">Godiste:</label>
+        <input type="number" name="godiste" required><br>
+
+        <label for="sedista">Sedista:</label>
+        <input type="number" name="sedista" required><br>
+
+        <label for="vimage1">Vimage1:</label>
+        <input type="text" name="vimage1" required><br>
+
+        <label for="vimage2">Vimage2:</label>
+        <input type="text" name="vimage2" required><br>
+
+        <label for="vimage3">Vimage3:</label>
+        <input type="text" name="vimage3" required><br>
+
+        <label for="vimage4">Vimage4:</label>
+        <input type="text" name="vimage4" required><br>
+
+        <label for="vimage5">Vimage5:</label>
+        <input type="text" name="vimage5" required><br>
+
+        <label for="klima">Klima:</label>
+        <select name="klima" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <label for="cdPlayer">CD Player:</label>
+        <select name="cdPlayer" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <label for="koznaSedista">Kozna Sedista:</label>
+        <select name="koznaSedista" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <label for="daljinskoZakljucavanje">Daljinsko Zakljucavanje:</label>
+        <select name="daljinskoZakljucavanje" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <label for="servoVolan">Servo Volan:</label>
+        <select name="servoVolan" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <label for="airbag">Airbag:</label>
+        <select name="airbag" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <label for="senzori">Senzori:</label>
+        <select name="senzori" required>
+        <option value="1">Da</option>
+        <option value="0">Ne</option>
+        </select><br>
+
+        <input type="submit" value="Postavi oglas">
+    </form>
+</body>
+</html>
