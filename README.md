@@ -1,0 +1,1 @@
+Web Aplikacija koja sadrzi automobile jedog Auto-placa, korisnik moze da postavi oglas i pretrazi da li se na placu nalazi automobil koji mu je potreban. Svaki oglas sadrzi informacije o automobilu kao i slike kako auto izgleda.
